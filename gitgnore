@@ -5,6 +5,5 @@ __pycache__/
 .buildozer/
 bin/
 *.apk
-venv/
 .env
-
+venv/
