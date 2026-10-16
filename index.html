@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZN POS SaaS - O Sistema Inteligente para o seu Negócio</title>
+    <style>
+        :root {
+            --primary: #00a859; /* Verde Moçambique */
+            --secondary: #e61c24; /* Vermelho M-Pesa */
+            --orange: #f58220; /* Laranja e-Mola */
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        header { background: var(--dark); color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 4px solid var(--primary); }
+        .hero { background: linear-gradient(135deg, #0f172a, #1e293b); color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 15px; color: var(--primary); }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .btn { display: inline-block; padding: 15px 30px; border-radius: 30px; font-weight: bold; text-decoration: none; transition: 0.3s; text-align: center; }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: #008f4c; }
+        
+        .features { padding: 50px 20px; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .feature-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid var(--primary); text-align: center; }
+        .feature-card h3 { margin-bottom: 10px; color: var(--dark); }
+        
+        .pricing-section { background: #f1f5f9; padding: 60px 20px; text-align: center; }
+        .pricing-section h2 { font-size: 2rem; margin-bottom: 10px; }
+        .pricing-grid { max-width: 1200px; margin: 40px auto 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+        .price-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
+        .price-card.featured { border: 3px solid var(--primary); transform: scale(1.03); }
+        .price-card h3 { font-size: 1.4rem; margin-bottom: 10px; }
+        .price { font-size: 1.8rem; font-weight: bold; color: var(--primary); margin: 15px 0; }
+        .price span { font-size: 1rem; color: #64748b; }
+        
+        .payment-methods { padding: 40px 20px; text-align: center; background: white; }
+        .payment-badges { display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .badge { padding: 10px 20px; border-radius: 8px; color: white; font-weight: bold; font-size: 0.9rem; }
+        .badge.mpesa { background: var(--secondary); }
+        .badge.emola { background: var(--orange); }
+        .badge.mkesh { background: #0056b3; }
+        
+        footer { background: var(--dark); color: white; text-align: center; padding: 20px; font-size: 0.9rem; border-top: 4px solid var(--primary); }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h2>🇲🇿 MZN POS SaaS</h2>
+    </header>
+
+    <section class="hero">
+        <h1>O Sistema de Caixa Inteligente adaptado a Moçambique</h1>
+        <p>Controle o seu stock, faça vendas táteis rápidas e use Inteligência Artificial para multiplicar o lucro das suas filiais. Tudo a funcionar no seu Tablet ou Telemóvel Android, mesmo Offline!</p>
+        <a href="#pricing" class="btn btn-primary">Começar Agora</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🤖 Inteligência Artificial</h3>
+            <p>Sugestões automáticas de Cross-selling ao balcão e previsões precisas de rutura de stock para os gerentes.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔌 Resiliência Offline</h3>
+            <p>Se a internet falhar, a sua frente de caixa continua a faturar. O sistema sincroniza na nuvem de forma invisível assim que a rede voltar.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📄 Talões e Etiquetas</h3>
+            <p>Impressão nativa Bluetooth de recibos térmicos profissionais de 80mm e etiquetas de produto com códigos de barras legíveis.</p>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <h2>Planos e Preços Flexíveis</h2>
+        <p>Escolha o pacote ideal para a dimensão do seu negócio comercial em Meticais</p>
+        
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>1 Loja</h3>
+                <div class="price">1.000,00 MT<span>/mês</span></div>
+                <p>Ideal para quiosques, pequenas mercearias e boutiques independentes.</p>
+            </div>
+            <div class="price-card featured">
+                <h3>2 Lojas</h3>
+                <div class="price">2.500,00 MT<span>/mês</span></div>
+                <p>Excelente para pequenos comerciantes em fase de expansão regional.</p>
+            </div>
+            <div class="price-card">
+                <h3>3 a 4 Lojas</h3>
+                <div class="price">3.500,00 MT<span>/mês</span></div>
+                <p>Controlo central avançado, transferências de stock inter-filiais e relatórios macro.</p>
+            </div>
+            <div class="price-card">
+                <h3>Supermercado</h3>
+                <div class="price">10.000,00 MT<span>/mês</span></div>
+                <p>Volume ilimitado de caixas, auditoria antifraude e IA financeira empresarial de topo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-methods">
+        <h3>Subscrição Simplificada e Prática</h3>
+        <p>Pague a sua mensalidade de forma digital e rápida através das principais carteiras móveis nacionais:</p>
+        <div class="payment-badges">
+            <div class="badge mpesa">M-PESA</div>
+            <div class="badge emola">e-Mola</div>
+            <div class="badge mkesh">mKesh</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MZN POS SaaS. Todos os direitos reservados para o Proprietário do Software.</p>
+    </footer>
+
+</body>
+  </html>
+  
