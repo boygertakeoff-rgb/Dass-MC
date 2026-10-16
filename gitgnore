@@ -1,1 +1,10 @@
+*.db
+*.db-journal
+__pycache__/
+*.pyc
+.buildozer/
+bin/
+*.apk
+venv/
+.env
 
