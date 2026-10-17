@@ -1,3 +1,11 @@
-<a href="https://wa.me/258863306119?text=Olá!%20Quero%20ativar%20MZN%20POS%20SaaS%20para%20Mercearia%20bill%20-%20Plano%201%20Loja%20-%201.000MT" target="_blank">
-<button style="padding:16px;background:#25D366;color:white;border:none;border-radius:10px;font-weight:bold;width:100%;font-size:16px">Pedir Acesso via WhatsApp 📱</button>
-</a>
+<script>
+function enviarWhatsApp() {
+  let nome = document.getElementById('nomeEmpresa').value || 'Minha Mercearia';
+  let plano = document.getElementById('planoSelect').value || '1 Loja - 1.000,00 MT';
+  let msg = `Olá! Quero ativar MZN POS SaaS para ${nome} - Plano ${plano}`;
+  let url = `https://wa.me/258863306119?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+}
+</script>
+
+<button onclick="enviarWhatsApp()" style="background:#25D366;color:white;padding:15px;width:100%;border:none;border-radius:8px;font-weight:bold">Pedir Acesso via WhatsApp 📱</button>
